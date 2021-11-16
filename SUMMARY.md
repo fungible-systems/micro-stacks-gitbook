@@ -1,23 +1,31 @@
 # Table of contents
 
-* [Get Started](README.md)
+* [Getting started](README.md)
 
-## core
+## modules
 
-* [Spaces](core/spaces.md)
-* [Collections](core/collections.md)
-* [The GitBook editor](core/the-gitbook-editor.md)
-* [Live edit and locked edits](core/live-edit-and-locked-edits.md)
-* [Change requests](core/change-requests.md)
+* [Core](modules/core/README.md)
+  * [API](modules/core/api.md)
+  * [Clarity](modules/core/clarity.md)
+  * [Connect](modules/core/connect.md)
+  * [Crypto](modules/core/crypto.md)
+  * [Network](modules/core/network.md)
+  * [Storage](modules/core/storage.md)
+  * [Transactions](modules/core/transactions.md)
+* [Extra](modules/extra/README.md)
+  * [Common](modules/extra/common.md)
+  * [BIP32](modules/extra/bip32.md)
+  * [BIP39](modules/extra/bip39.md)
+  * [Wallet SDK](modules/extra/wallet-sdk.md)
+  * [Zone file](modules/extra/zone-file.md)
+* [Integrations](modules/integrations/README.md)
+  * [React](modules/integrations/react.md)
+  * [Next.js](modules/integrations/next.js.md)
+  * [Query](modules/integrations/query.md)
 
-## Publishing
+## Guides
 
-* [Publishing your content](publishing/publishing-your-content.md)
-
-## Tips and tricks
-
-* [Speed up with quick find](tips-and-tricks/speed-up-with-quick-find.md)
-
-## Next steps
-
-* [What next?](next-steps/what-next.md)
+* [Adding authentication to a React app](guides/adding-authentication-to-a-react-app.md)
+* [Signing transactions from an app](guides/signing-transactions-from-an-app.md)
+* [Working with post-conditions](guides/working-with-post-conditions.md)
+* [Fetching from and storing data on Gaia](guides/fetching-from-and-storing-data-on-gaia.md)
