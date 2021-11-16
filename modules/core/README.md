@@ -16,8 +16,8 @@ The core modules below are what make up the primary functionality that enables y
 
 The API module `micro-stacks/api`, is the module that allows you to fetch data from the `stacks-blockchain-api`. It exports a set of fetchers that map to all available endpoints in the API.&#x20;
 
-{% content-ref url="api.md" %}
-[api.md](api.md)
+{% content-ref url="api/" %}
+[api](api/)
 {% endcontent-ref %}
 
 #### **Clarity**

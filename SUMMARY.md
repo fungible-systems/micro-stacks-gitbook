@@ -5,7 +5,8 @@
 ## modules
 
 * [Core](modules/core/README.md)
-  * [API](modules/core/api.md)
+  * [API](modules/core/api/README.md)
+    * [Accounts](modules/core/api/accounts.md)
   * [Clarity](modules/core/clarity.md)
   * [Connect](modules/core/connect.md)
   * [Crypto](modules/core/crypto.md)
