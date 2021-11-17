@@ -13,6 +13,7 @@
     * [Faucets](modules/core/api/faucets.md)
     * [Fee Rate](modules/core/api/fee-rate.md)
     * [Fees](modules/core/api/fees.md)
+    * [Info](modules/core/api/info.md)
     * [Microblocks](modules/core/api/microblocks.md)
     * [Search](modules/core/api/search.md)
     * [Smart Contracts](modules/core/api/smart-contracts.md)
