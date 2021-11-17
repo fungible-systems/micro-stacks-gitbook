@@ -31,7 +31,12 @@
   * [Wallet SDK](modules/extra/wallet-sdk.md)
   * [Zone file](modules/extra/zone-file.md)
 * [Integrations](modules/integrations/README.md)
-  * [React](modules/integrations/react.md)
+  * [React](modules/integrations/react/README.md)
+    * [Authentication](modules/integrations/react/authentication.md)
+    * [User data](modules/integrations/react/user-data.md)
+    * [Transactions](modules/integrations/react/transactions.md)
+    * [Storage](modules/integrations/react/storage.md)
+    * [Extras](modules/integrations/react/extras.md)
   * [Next.js](modules/integrations/next.js.md)
   * [Query](modules/integrations/query.md)
 
