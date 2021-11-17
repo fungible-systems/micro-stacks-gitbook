@@ -54,7 +54,7 @@ import { fetchAccountTransactions } from 'micro-stacks/api';
 const network = new StacksMainnet()
 
 // fetch account transactions
-const stxBalance = await fetchAccountTransactions({
+const account_transactions = await fetchAccountTransactions({
   url: network.getCoreApiUrl(),
   principal: '',
   limit = 20,
@@ -80,7 +80,7 @@ import { fetchAccountTransactionsWithTransfers } from 'micro-stacks/api';
 const network = new StacksMainnet()
 
 // fetch account transactions with stx transfers
-const stxBalance = await fetchAccountTransactionsWithTransfers({
+const transactions = await fetchAccountTransactionsWithTransfers({
   url: network.getCoreApiUrl(),
   principal: '',
   limit = 20,
@@ -106,7 +106,7 @@ import { fetchAccountAssets } from 'micro-stacks/api';
 const network = new StacksMainnet()
 
 // fetch account assets
-const stxBalance = await fetchAccountAssets({
+const assets = await fetchAccountAssets({
   url: network.getCoreApiUrl(),
   principal: '',
   limit = 20,
@@ -132,7 +132,7 @@ import { fetchAccountMempoolTransactions } from 'micro-stacks/api';
 const network = new StacksMainnet()
 
 // fetch account mempool transactions
-const stxBalance = await fetchAccountMempoolTransactions({
+const mempool_transactions = await fetchAccountMempoolTransactions({
   url: network.getCoreApiUrl(),
   principal: '',
   limit = 20,
