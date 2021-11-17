@@ -1,7 +1,6 @@
 # Table of contents
 
 * [Getting started](README.md)
-* [The Stacks 2.0 Blockchain API](the-stacks-2.0-blockchain-api.md)
 
 ## modules
 
