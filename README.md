@@ -41,7 +41,7 @@ npm install micro-stacks
 
 ### Basic usage
 
-```ts
+```typescript
 import { serializeCV } from 'micro-stacks/clarity';
 
 const serialized = serializeCV(myClarityValue);
