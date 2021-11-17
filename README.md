@@ -69,24 +69,24 @@ The React integration is made up of three distinct packages:&#x20;
 
 This package is the primary react integration. It has everything you need to build out complex stacks-based application.&#x20;
 
-{% content-ref url="modules/frameworks/react/" %}
-[react](modules/frameworks/react/)
+{% content-ref url="modules/integrations/react/" %}
+[react](modules/integrations/react/)
 {% endcontent-ref %}
 
 #### **@micro-stacks/nextjs**
 
 This package is made specifically to help build advanced next.js (SSR) stacks based applications.&#x20;
 
-{% content-ref url="modules/frameworks/next.js.md" %}
-[next.js.md](modules/frameworks/next.js.md)
+{% content-ref url="modules/integrations/next.js.md" %}
+[next.js.md](modules/integrations/next.js.md)
 {% endcontent-ref %}
 
 #### **@micro-stacks/query**
 
 This package is a highly opinionated abstraction on top of react-query and jotai, giving access to external stacks API data in a way that is very easy to use.
 
-{% content-ref url="modules/frameworks/query.md" %}
-[query.md](modules/frameworks/query.md)
+{% content-ref url="modules/integrations/query.md" %}
+[query.md](modules/integrations/query.md)
 {% endcontent-ref %}
 
 To install any of them, follow the same steps as before:

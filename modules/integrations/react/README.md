@@ -36,9 +36,35 @@ The `MicroStacksProvider` should only be used in client-side react applications.
 
 The package uses [Jotai](https://jotai.org) behind-the-scenes for all state management. As a result, your application needs to be wrapped with `MicroStacksProvider`. The provider is used to define some micro-stacks specific data for your app.&#x20;
 
-### AuthOptions
+You are able to pass things like the network of the app (mainnet or testnet), and the `AuthOptions` object which includes things like your app name and icon. `AuthOptions` also allows for you to pass certain callback functions that fire on different events when authentication happens: `onFinish`, `onCancel`, and `onSignOut`. Take a look at the TypeScript interface below the example to see all available options.
 
-You are able to pass things like the network of the app (mainnet or testnet), and the `AuthOptions` object which includes things like your app name and icon. `AuthOptions` also allows for you to pass certain callback functions that fire on different events when authentication happens: `onFinish`, `onCancel`, and `onSignOut`.  Take a look at the TypeScript interface below to see all available options:
+This information is then passed along to the [Hiro Web Wallet](https://hiro.so/wallet/install-web) that is used to authenticate your users.&#x20;
+
+#### Example
+
+```typescript
+import { MicroStacksProvider } from '@micro-stacks/react';
+import type { AuthOptions } from '@micro-stacks/react';
+
+const authOptions: AuthOptions = {
+  appDetails: {
+    name: 'My cool app',
+    icon: '/my-app-icon.png',
+  }
+}
+
+const MyApp = () => {
+  return <MicroStacksProvider authOptions={authOptions}>
+    // rest of your app
+  </MicroStacksProvider>
+};
+```
+
+{% hint style="info" %}
+**Important**: you should only define `MicroStacksProvider` once in your application, and you cannot use any nested `Providers` from Jotai.
+{% endhint %}
+
+#### AuthOptions interface
 
 ```typescript
 interface AuthOptions {
@@ -74,26 +100,3 @@ type AuthScope =
 
 ```
 
-This information is then passed along to the [Hiro Web Wallet](https://hiro.so/wallet/install-web) that is used to authenticate your users. Check out the example below:
-
-```typescript
-import { MicroStacksProvider } from '@micro-stacks/react';
-import type { AuthOptions } from '@micro-stacks/react';
-
-const authOptions: AuthOptions = {
-  appDetails: {
-    name: 'My cool app',
-    icon: '/my-app-icon.png',
-  }
-}
-
-const MyApp = () => {
-  return <MicroStacksProvider authOptions={authOptions}>
-    // rest of your app
-  </MicroStacksProvider>
-};
-```
-
-{% hint style="info" %}
-**Important**: you should only define `MicroStacksProvider` once in your application, and you cannot use any nested `Providers` from Jotai.
-{% endhint %}
