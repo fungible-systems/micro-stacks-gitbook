@@ -6,9 +6,9 @@ description: >-
 
 # Authentication
 
-The foundation of any Stacks based application is authentication. You are able to add authentication to any react application. Stacks auth is dependent on your users having a compatible wallet to authenticate through. Currently, the Hiro Web Wallet is the only wallet that is supported.&#x20;
+The foundation of any Stacks based application is authentication. With `@micro-stacks/react`, you are able to add authentication to any React application. Stacks auth is dependent on your users having a compatible wallet to authenticate with. Currently, the [Hiro Web Wallet](https://hiro.so/wallet/install-web) is the only wallet that is supported.&#x20;
 
-Before adding authentication, make sure you've properly set up your application to work with `micro-stacks`.
+Before adding authentication, make sure you've [properly set up](./) your application to work with `micro-stacks`.
 
 ### useAuth
 
@@ -35,9 +35,9 @@ export const WalletConnectButton = () => {
 `micro-stacks` has built-in support for cross-tab communication! This means if your user has two windows open of your application, their sessions will sync automatically.
 {% endhint %}
 
-#### Auth response payload
+#### Stacks session payload
 
-handleSignIn returns a payload of type `StacksSessionState`
+`handleSignIn` returns a payload of type `StacksSessionState`. Most often, you will never need to manually use this state, as `@micro-stacks/react` automatically keeps track of it. This is the shape of the data returned from the callback:
 
 ```typescript
 interface StacksSessionState {
@@ -57,6 +57,8 @@ interface StacksSessionState {
     identityAddress?: string;
 }
 ```
+
+### User data
 
 And with that, once a user authenticates, your application will have their session saved until they sign out.
 
