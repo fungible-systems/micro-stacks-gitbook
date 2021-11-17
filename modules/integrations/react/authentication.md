@@ -10,6 +10,10 @@ The foundation of any Stacks based application is authentication. With `@micro-s
 
 Before adding authentication, make sure you've [properly set up](./) your application to work with `micro-stacks`.
 
+{% hint style="info" %}
+**Important**: you must define the [`AuthOptions`](./#authoptions) with either the [`MicroStacksProvider`](./#microstacksprovider) for client side react apps, or `wrapWithMicroStacks` higher order component for Next.js based apps.
+{% endhint %}
+
 ### useAuth
 
 The primary way you'll implement authentication is via the `useAuth` hook. This hook exposes a few callbacks for different functions (`handleSignIn`, `handleSignIn`), along with some helper variables: `isLoading` `isSignedIn`. Check out the sample below for a very simple `WalletConnectButton` component:
