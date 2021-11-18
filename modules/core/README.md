@@ -24,8 +24,8 @@ The API module `micro-stacks/api`, is the module that allows you to fetch data f
 
 The `micro-stacks/clarity` module includes all the code required to interact with Clarity in a JavaScript environment. This includes things like parsing and constructing Clarity Values.&#x20;
 
-{% content-ref url="clarity.md" %}
-[clarity.md](clarity.md)
+{% content-ref url="clarity/" %}
+[clarity](clarity/)
 {% endcontent-ref %}
 
 #### **Connect**

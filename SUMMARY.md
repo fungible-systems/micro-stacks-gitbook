@@ -1,6 +1,7 @@
 # Table of contents
 
 * [Getting started](README.md)
+* [The Stacks 2.0 Blockchain API](the-stacks-2.0-blockchain-api.md)
 
 ## modules
 
@@ -19,7 +20,11 @@
     * [Smart Contracts](modules/core/api/smart-contracts.md)
     * [Tokens](modules/core/api/tokens.md)
     * [Transactions](modules/core/api/transactions.md)
-  * [Clarity](modules/core/clarity.md)
+  * [Clarity](modules/core/clarity/README.md)
+    * [Overview](modules/core/clarity/overview.md)
+    * [Clarity Values](modules/core/clarity/clarity-values.md)
+    * [Serialization](modules/core/clarity/serialization.md)
+    * [Post Conditions](modules/core/clarity/post-conditions.md)
   * [Connect](modules/core/connect.md)
   * [Crypto](modules/core/crypto.md)
   * [Network](modules/core/network.md)
