@@ -1,4 +1,4 @@
-# Collections
+# Clarity
 
 ## A place to group your spaces
 
