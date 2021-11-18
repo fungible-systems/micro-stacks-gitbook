@@ -20,7 +20,6 @@
     * [Tokens](modules/core/api/tokens.md)
     * [Transactions](modules/core/api/transactions.md)
   * [Clarity](modules/core/clarity.md)
-    * [Overview](modules/core/clarity/overview.md)
     * [Clarity Values](modules/core/clarity/clarity-values.md)
     * [Serialization](modules/core/clarity/serialization.md)
     * [Post Conditions](modules/core/clarity/post-conditions.md)
