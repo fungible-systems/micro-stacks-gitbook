@@ -6,12 +6,19 @@ Transaction signing will likely play a big role in the functionality of your app
 
 ```typescript
 import { useContractCall } from '@micro-stacks/react';
+import { uintCV } from 'micro-stacks/clarity';
 
-const codeBody = `;; hello world`;
-const contractName = 'foo bar';
+const contractAddress = 'SP...';
+const contractName = 'my-contract';
+const functionName = 'my-function';
 
-const ContractDeployButton = () => {
-  const { handleContractCall, isLoading } = useContractDeploy({
+// `functionArgs` is a list of `ClarityValue` objects
+const functionArgs = [
+  uintCV(123n),
+];
+
+const ContractCallButton = () => {
+  const { handleContractCall, isLoading } = useContractCall({
     contractAddress,
     contractName,
     functionName,
