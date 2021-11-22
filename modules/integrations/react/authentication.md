@@ -36,7 +36,7 @@ export const WalletConnectButton = () => {
 ```
 
 {% hint style="info" %}
-`micro-stacks` has built-in support for cross-tab communication! This means if your user has two windows open of your application, their sessions will sync automatically.
+`micro-stacks` has built-in support for cross-tab communication! This means that if a user has your application open in more than one tab, their sessions will sync automatically.
 {% endhint %}
 
 #### Stacks session payload
