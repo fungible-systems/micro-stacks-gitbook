@@ -2,7 +2,7 @@
 
 `micro-stacks` ships with a number of functions for constructing, serializing and deserializing clarity values. Here are some examples of each:
 
-```
+```typescript
 import {
   bufferCV,
   ClarityValue,

@@ -44,7 +44,7 @@ Optionals in Clarity extend the base types to provide a way to accommodate situa
 
 Types are Clarity's named field record variable type.
 
-```
+```lisp
 {
     messageId: u3, ;; uint
     message: u"micro-stacks is awesome" ;; UTF-8 string
