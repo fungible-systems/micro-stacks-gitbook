@@ -44,6 +44,37 @@ export default withMicroStacks(Home);
 
 This now gives your app access to values from the `MicroStacksProvider`. Under-the-hood this is the same thing that you'd do in a client-side react application.
 
+#### Help! I'm getting the error `No authOptions provided.` What do I do?
+
+If you're getting this error but you've set everything up as described, it's likely due to some duplication of dependencies.&#x20;
+
+You need to resolve to a single version of the dependencies. You can use this custom `next.config.js` file to resolve to only one version of each dependency:
+
+```javascript
+const path = require('path');
+
+/** @type {import('next').NextConfig} */
+module.exports = withBundleAnalyzer({
+  reactStrictMode: true,
+  webpack(config, { isServer }) {
+    const fallback = config.resolve.fallback || (config.resolve.fallback = {});
+    const alias = config.resolve.alias || (config.resolve.alias = {});
+
+    // to make sure everything is using the same version of jotai and atoms in pkgs
+    alias['jotai'] = path.resolve(__dirname, 'node_modules', 'jotai');
+    alias['jotai-query-toolkit'] = path.resolve(__dirname, 'node_modules', 'jotai-query-toolkit');
+    alias['react-query'] = path.resolve(__dirname, 'node_modules', 'react-query');
+    alias['@micro-stacks/nextjs'] = path.resolve(__dirname, 'node_modules', '@micro-stacks/nextjs');
+    alias['@micro-stacks/query'] = path.resolve(__dirname, 'node_modules', '@micro-stacks/query');
+    alias['@micro-stacks/react'] = path.resolve(__dirname, 'node_modules', '@micro-stacks/react');
+		
+    // prevent some automatic polyfill next.js does
+    if (!isServer) fallback['crypto'] = fallback['stream'] = false;
+    return config;
+  },
+});
+```
+
 ### Fetching data
 
 One of the best features of Next.js (or any SSR app) is its ability to fetch data on the server and provide those results to the client on first load. With `@micro-stacks/nextjs` you can fetch certain data automatically, and have it be ready for your users on first load. Let's look at some examples:
