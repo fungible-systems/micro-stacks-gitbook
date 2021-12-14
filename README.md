@@ -2,6 +2,9 @@
 
 ### Introduction
 
+You're probably wondering where to read this! Try here:
+https://docs.micro-stacks.dev/
+
 `micro-stacks` is a library of JavaScript modules that enable you to interact with the Stacks ecosystem. The primary goals of this library are as follows:
 
 * Core has no extra dependencies (just 2 dependencies: [noble-secp256k1](https://github.com/paulmillr/noble-secp256k1), [noble-hashes](https://github.com/paulmillr/noble-hashes)).
