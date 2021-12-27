@@ -44,7 +44,7 @@ This information is then passed along to the [Hiro Web Wallet](https://hiro.so/w
 
 ```typescript
 import { MicroStacksProvider } from '@micro-stacks/react';
-import type { AuthOptions } from 'micro-stacks/connect;
+import type { AuthOptions } from 'micro-stacks/connect';
 
 const authOptions: AuthOptions = {
   appDetails: {
