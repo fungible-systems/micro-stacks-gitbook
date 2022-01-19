@@ -2,9 +2,6 @@
 
 ### Introduction
 
-You're probably wondering where to read this! Try here:
-https://docs.micro-stacks.dev/
-
 `micro-stacks` is a library of JavaScript modules that enable you to interact with the Stacks ecosystem. The primary goals of this library are as follows:
 
 * Core has no extra dependencies (just 2 dependencies: [noble-secp256k1](https://github.com/paulmillr/noble-secp256k1), [noble-hashes](https://github.com/paulmillr/noble-hashes)).
@@ -66,11 +63,11 @@ To learn more about all the modules that are included with micro-stacks, please 
 
 ### React
 
-The React integration is made up of three distinct packages:&#x20;
+The React integration is made up of three distinct packages:
 
 #### **@micro-stacks/react**
 
-This package is the primary react integration. It has everything you need to build out complex stacks-based application.&#x20;
+This package is the primary react integration. It has everything you need to build out complex stacks-based application.
 
 {% content-ref url="modules/integrations/react/" %}
 [react](modules/integrations/react/)
@@ -78,7 +75,7 @@ This package is the primary react integration. It has everything you need to bui
 
 #### **@micro-stacks/nextjs**
 
-This package is made specifically to help build advanced next.js (SSR) stacks based applications.&#x20;
+This package is made specifically to help build advanced next.js (SSR) stacks based applications.
 
 {% content-ref url="modules/integrations/next.js.md" %}
 [next.js.md](modules/integrations/next.js.md)
