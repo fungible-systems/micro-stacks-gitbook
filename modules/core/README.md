@@ -32,8 +32,8 @@ The `micro-stacks/clarity` module includes all the code required to interact wit
 
 `micro-stacks/connect` is the module that handles all communication between a given application and any Stacks based wallet (currently only the Hiro Web Wallet is supported). This included functionality around authentication and signing transactions.&#x20;
 
-{% content-ref url="connect/" %}
-[connect](connect/)
+{% content-ref url="connect.md" %}
+[connect.md](connect.md)
 {% endcontent-ref %}
 
 #### **Crypto**
