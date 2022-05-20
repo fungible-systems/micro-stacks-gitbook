@@ -32,8 +32,8 @@ The `micro-stacks/clarity` module includes all the code required to interact wit
 
 `micro-stacks/connect` is the module that handles all communication between a given application and any Stacks based wallet (currently only the Hiro Web Wallet is supported). This included functionality around authentication and signing transactions.&#x20;
 
-{% content-ref url="connect.md" %}
-[connect.md](connect.md)
+{% content-ref url="connect/" %}
+[connect](connect/)
 {% endcontent-ref %}
 
 #### **Crypto**
@@ -62,8 +62,8 @@ This package should generally not be used by most clients, however sometimes it 
 
 This module is how you would interact with Gaia. It allows for you to safely store your users data encrypted.&#x20;
 
-{% content-ref url="storage.md" %}
-[storage.md](storage.md)
+{% content-ref url="../integrations/react/storage.md" %}
+[storage.md](../integrations/react/storage.md)
 {% endcontent-ref %}
 
 #### **Transactions**

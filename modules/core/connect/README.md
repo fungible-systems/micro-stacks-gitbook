@@ -3,7 +3,7 @@
 `micro-stacks/connect` is the module that deals with interactions between wallets and your application. This means if you need to implement authentication or transaction signing, this library is playing a role in that.
 
 {% hint style="info" %}
-More often than not, you as an app developer will never need to use this package directly. If you are building a React application, you should check out the docs on [Authentication](../integrations/react/authentication.md) and [Transactions](transactions.md).
+More often than not, you as an app developer will never need to use this package directly. If you are building a React application, you should check out the docs on [Authentication](../../integrations/react/authentication.md) and [Transactions](../transactions.md).
 {% endhint %}
 
 ## Authentication

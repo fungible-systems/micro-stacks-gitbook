@@ -1,9 +1,3 @@
----
-description: >-
-  micro-stacks/api allows you to fetch data from the stacks-blockchain-api. It
-  exports a set of fetchers that map to all available endpoints in the API.
----
-
 # API
 
 This module allows you to fetch data from the stacks-blockchain-api. It exports a set of fetchers that map to all available endpoints in the API.
@@ -36,10 +30,10 @@ The Stacks 2.0 Blockchain API is an API service developed and ran by [Hiro Syste
 
 The Stacks API consists of two separate but related services:
 
-* The **Stacks Blockchain API **that provides _extended_ endpoints for additional capabilities (these routes can be identified by the `/extended/` path.
+* The **Stacks Blockchain API** that provides _extended_ endpoints for additional capabilities (these routes can be identified by the `/extended/` path.
 * The **Stacks Node** that exposes a JSON RPC API (these routes can be identified by the `/v2/` path.
 
-In the client code and API examples within this document, we reference the Stacks API implementations freely hosted by [Hiro](https://hiro.so):
+In the client code and API examples within this document, we reference the Stacks API implementations freely hosted by [Hiro](https://hiro.so/):
 
 `mainnet: https://stacks-node-api.mainnet.stacks.co/`
 
